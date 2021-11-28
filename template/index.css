@@ -1,0 +1,104 @@
+html {
+    font-size: .9rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, Sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(16, 16, 5);
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(16, 16, 5);
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 238, 255);
+}
+
+header a {
+    color: white;
+    padding: 1rem;
+}
+
+.row.center {
+    justify-content: center;
+}
+
+
+/* Styling image*/
+
+img {
+    border-radius: 0.5rem;
+}
+
+img.medium {
+    max-width: 29rem;
+    width: 100%;
+}
+
+
+/*Card styling*/
+
+.card {
+    border: 0.1rem black solid;
+    background-color: #acd1d5;
+    ;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body>* {
+    /*All elemenets of card-body*/
+    margin-bottom: 0.5rem;
+}
+
+.rating span {
+    color: blue;
+    margin: 0.1rem;
+}
+
+h2 {
+    color: rgb(26, 8, 8);
+}
+
+h2:hover {
+    color: brown;
+}
